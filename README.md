@@ -70,8 +70,8 @@
         <li><a href="#compute-the-similarity">Compute The Similarity</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Return Ranked Results</a></li>
-    <li><a href="#contributing">Deploy The Function</a></li>
+    <li><a href="#return-ranked-results">Return Ranked Results</a></li>
+    <li><a href="#deploy-the-function">Deploy The Function</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -183,45 +183,29 @@ In my project, I employed various techniques to measure similarity between diffe
 
 
 
-<!-- ROADMAP -->
-## Roadmap
+<!-- Return Ranked Results -->
+## Return Ranked Results
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+<p>In my project, I developed a machine learning model capable of receiving a text description of a clothing item and generating a ranked list of links to similar items from various websites. This solution was implemented as a function deployed on Google Cloud, enabling it to accept a text string as input and provide JSON responses with ranked suggestions.</p>
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+<p>To achieve this, I first gathered a large dataset consisting of clothing item descriptions and their corresponding links from different websites. With this dataset, I trained a machine learning model using a suitable algorithm, such as a deep learning model based on recurrent neural networks or a transformer model like BERT.</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p>Using the trained model, I created a function that takes the input text describing a clothing item. The function then processes the text using natural language processing techniques to extract the relevant features and representations. This allows the model to understand the description and identify the key attributes of the clothing item.</p>
 
+<p>Once the input is processed, the model compares it to the dataset of clothing item descriptions it was trained on. It computes the similarity between the input description and each item in the dataset, ranking them based on their similarity scores. The higher the similarity score, the more relevant the item is considered to be.</p>
 
+<p>Upon ranking the items, the function generates JSON responses containing the ranked suggestions. Each response includes the link to the clothing item and additional information, such as the name, brand, price, and any other relevant details available. These responses are then returned to the user, providing them with a list of recommended similar items from different websites.</p>
 
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+<p>By deploying this function on Google Cloud, it becomes readily accessible to users. They can make requests by providing a text description, and the function will promptly generate and deliver the ranked suggestions in the form of JSON responses. This solution allows users to effortlessly explore similar clothing items from various sources, assisting them in finding desired items and facilitating their online shopping experience.</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- LICENSE -->
-## License
+<!-- Deploy The Function -->
+## Deploy The Function
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -230,7 +214,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+<p>Your Name - Reesu Jagan</p> 
+<p>Email-Id - reesujagan42@gmail.com</p>
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
@@ -241,9 +226,8 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-* [Choose an Open Source License](https://choosealicense.com)
+* [Amazon](https://www.amazon.com/)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
 * [Malven's Grid Cheatsheet](https://grid.malven.co/)
