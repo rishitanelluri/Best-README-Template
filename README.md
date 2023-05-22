@@ -30,23 +30,21 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/othneildrew/Clothing Similarity Search">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Clothing Similarity Search</h3>
 
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+  <p align="center"
+    <a href="https://github.com/othneildrew/Clothing Similarity Search"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/othneildrew/Clothing Similarity Search">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/othneildrew/Clothing Similarity Search/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/othneildrew/Clothing Similarity Search/issues">Request Feature</a>
   </p>
 </div>
 
@@ -63,16 +61,20 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started"> Collect And Preprocess Data.</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#installation">Preprocess the text data</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#usage">Measure similarity.</a>
+    <ul>
+        <li><a href="#prerequisites">Extracting Useful Features</a></li>
+        <li><a href="#installation">Compute The Similarity</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Return Ranked Results</a></li>
+    <li><a href="#contributing">Deploy The Function</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -82,19 +84,12 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+<p>Project Description:<br>
+<p>The objective of this project is to create a machine learning model and implement it as a Google Cloud function to provide a recommendation system for apparel. The solution will take a text string that describes an article of clothing and return a JSON response with a ranked list of links to articles of clothing that are similar on other websites.</p>
+<p>Starting with relevant data such as product descriptions, photos, and customer reviews, a machine-learning learning, learning model is trained. The model will be trained to recognize the semantic context of the input text and to identify crucial characteristics of clothing items.</p>
+<p>The model will be deployed as a function on the Google Cloud platform when it has been trained. The feature will act as an interface for receiving recommendations-related inquiries. The function will accept a text string as input that describes a piece of clothing, like "blue denim jeans" or "black leather jacket."</p>
+<p>The deployed machine learning model will be used by the function to process the input text once it receives a request in order to extract the key features and determine the user's intent. The model will then employ these qualities to browse databases or explore numerous clothes websites in search of comparable things.<p>
+<p>A JSON result from the function will offer a ranked list of links to the most pertinent and related clothing items. Based on the model's confidence in each item's resemblance to the input text, the ranking will be determined. The reply could include details like the product's name,  image, price, and a direct link to the store's website.</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,12 +112,32 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- Collect and preprocess data -->
+##  Collect And Preprocess Data
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To collect and preprocess data, you likely followed several steps and utilized various techniques. Here is a general description of how you might have accomplished this task:
 
+1. You began by defining the data requirements, determining the specific data needed for your project or analysis. This involved deciding on the data sources, variables of interest, and timeframe for data collection.
+
+2. You identified the data sources from which to obtain the required data. These sources could have included public databases, APIs, web scraping, surveys, or internal company data.
+
+3. You gathered the relevant data from the identified sources. This involved accessing public databases, querying APIs, downloading datasets, or manually collecting data through surveys or other means. You ensured compliance with legal and ethical guidelines, such as obtaining necessary permissions and respecting user privacy.
+
+4. Raw data is often messy and may contain errors, missing values, or inconsistencies. To address this, you performed data cleaning tasks to transform the raw data into a structured format suitable for analysis. These tasks included removing duplicates, handling missing values, correcting errors, standardizing formats, and resolving inconsistencies. You may have utilized software tools, programming languages like Python or R, or data cleaning platforms for this purpose.
+
+5. In some cases, you needed to integrate data from multiple sources to create a comprehensive dataset. This involved merging different datasets based on common variables or using data integration techniques such as joining or concatenating. You paid attention to data integrity and quality during the integration process.
+
+6. Depending on your project requirements, you performed data transformation tasks to convert the data into a different format or structure. This could have involved aggregating data, normalizing or scaling variables, encoding categorical variables, or creating new features through feature engineering techniques.
+
+7. If your dataset contained a large number of variables, you might have performed feature selection to identify the most relevant and informative features for your analysis. You employed feature selection methods such as statistical tests, correlation analysis, or machine learning algorithms to identify the most important variables.
+
+8. In certain cases, you may have needed to sample the data to reduce the dataset's size or balance the class distribution for machine learning tasks. Data sampling techniques like random sampling, stratified sampling, or oversampling/undersampling methods could have been applied to address such requirements.
+
+9. To ensure compatibility with the models or algorithms you planned to use, you formatted the data in a specific way. This involved reshaping the data, converting it into a particular file format (e.g., CSV, JSON, or SQL), or splitting it into training and testing sets.
+
+10. Before proceeding with analysis or modeling, you validated the processed data. This involved checking for any remaining inconsistencies, ensuring the dataset met the desired quality standards, and confirming that it aligned with the initial requirements.
+
+By following these steps, you were able to effectively collect and preprocess data, making it ready for analysis, modeling, or any other downstream tasks in your project. Remember that the specific techniques and tools used can vary depending on the nature of the data and the requirements of your project.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
