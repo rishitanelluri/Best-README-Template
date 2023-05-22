@@ -61,13 +61,13 @@
       <a href="#collect-and-preprocess-data"> Collect And Preprocess Data.</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Preprocess the text data</a></li>
+        <li><a href="#preprocess-the-text-data">Preprocess the text data</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Measure similarity.</a>
+    <li><a href="#measure-similarity">Measure similarity.</a>
     <ul>
-        <li><a href="#prerequisites">Extracting Useful Features</a></li>
-        <li><a href="#installation">Compute The Similarity</a></li>
+        <li><a href="#extracting-useful-features">Extracting Useful Features</a></li>
+        <li><a href="#compute-the-similarity">Compute The Similarity</a></li>
       </ul>
     </li>
     <li><a href="#roadmap">Return Ranked Results</a></li>
@@ -127,34 +127,57 @@ By following these steps, you were able to effectively collect and preprocess da
 
 <p>By combining the capabilities of BeautifulSoup and ParseHub, I was able to efficiently scrape and parse data from multiple sources, automating the process and saving significant time and effort. The extracted data served as the foundation for my project, enabling me to perform comprehensive analysis, generate insights, and make informed decisions based on the acquired information.</p>
 
-### Installation
+### Preprocess The Text Data
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+<p>In my project, I employed several preprocessing techniques to clean and prepare the text data for further analysis.</p>
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+<p>Firstly, I performed data cleaning by removing any irrelevant or redundant information such as HTML tags, special characters, punctuation marks, and numbers. This was achieved by utilizing Python's string manipulation functions and regular expressions, allowing me to systematically eliminate unwanted elements.</p>
+
+<p>Next, I handled text normalization to ensure consistency and standardization across the dataset. This involved converting all text to lowercase to avoid discrepancies caused by capitalization. I also applied techniques such as stemming or lemmatization to reduce words to their base or root form, enabling effective comparison and analysis.</p>
+
+<p>To enhance the quality of the text data, I implemented stop word removal. Stop words, such as "and," "the," or "is," do not carry significant meaning and can be safely excluded from the analysis. By utilizing predefined lists of stop words or creating custom ones, I filtered out these words to focus on the more meaningful content.</p>
+
+<p>Furthermore, I performed tokenization, splitting the text into individual words or tokens. This process facilitated further analysis by treating each word as a separate entity. I used Python's libraries, such as NLTK (Natural Language Toolkit), to tokenize the text efficiently.</p>
+
+<p>Lastly, I addressed the issue of text encoding by ensuring that the data was in a suitable format for analysis. I handled encoding problems, such as converting Unicode characters or non-standard encodings, to ensure compatibility and avoid any misinterpretation of the data.</p>
+
+<p>By employing these preprocessing techniques, I successfully cleaned and standardized the text data in my project, enabling me to perform accurate analysis, text mining, or natural language processing tasks with improved results and insights.</p>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+<!-- Measure similarity -->
+## Measure similarity
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+In my project, I employed various techniques to measure similarity between different entities or data points. By utilizing these methods, I was able to quantify the degree of resemblance or likeness between them.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+
+### Extracting Useful Features
+ <p>In my project, I actively extracted useful features by implementing various techniques and methodologies. Firstly, I identified the specific requirements and objectives of my project, determining the key features that were crucial for achieving the desired outcomes.</p>
+
+<p>Using the BeautifulSoup scraping tool and ParseHub software, I employed data extraction techniques to retrieve the relevant information from the web pages. I carefully analyzed the HTML structure and identified the specific elements and attributes that contained the desired features. By leveraging the capabilities of these tools, I extracted text, images, links, and other data points that were important for my project.</p>
+
+<p>Furthermore, I applied data cleaning and preprocessing techniques to ensure the extracted features were in a usable format. This involved removing any irrelevant or noisy data, handling missing values, and normalizing the extracted information as needed. By performing these preprocessing steps, I ensured the quality and consistency of the features extracted.</p>
+
+<p>In addition to the basic features, I also employed advanced techniques to extract more complex and meaningful features. This included utilizing regular expressions, pattern matching, and natural language processing algorithms to identify and extract specific patterns, entities, or sentiment from the textual data. By incorporating these techniques, I was able to derive deeper insights and uncover hidden relationships within the extracted features.</p>
+
+<p>Throughout the process, I iteratively refined my feature extraction approach, considering feedback, and adapting to the evolving requirements of my project. By actively engaging in feature selection and extraction, I ensured that the features extracted were relevant, informative, and aligned with the goals of my project. These extracted features became the foundation for subsequent analysis, modeling, and decision-making processes in my project.</p>
+
+### Compute The Similarity
+<p>In my project, I computed the similarity between the input text and the texts in my database using a variety of techniques and algorithms. Firstly, I employed natural language processing (NLP) methods to preprocess both the input text and the texts in the database. This preprocessing involved tasks such as tokenization, stop word removal, stemming or lemmatization, and removing punctuation or special characters.</p>
+
+<p>Next, I utilized a term frequency-inverse document frequency (TF-IDF) approach to represent the texts in a numerical format. TF-IDF calculates the importance of each term in a document by considering its frequency within that document and its rarity across the entire corpus. By applying TF-IDF, I transformed the texts into numerical vectors that captured their semantic content.</p>
+
+<p>To measure the similarity between the input text and the texts in the database, I employed cosine similarity. Cosine similarity calculates the cosine of the angle between two vectors, providing a value between 0 and 1, where 1 represents maximum similarity. By comparing the TF-IDF vectors of the input text and the texts in the database, I computed the cosine similarity scores.</p>
+
+<p>Additionally, I experimented with other similarity measures such as Jaccard similarity or Euclidean distance, depending on the specific requirements of my project. These measures allowed me to assess similarity from different perspectives and cater to different use cases.</p>
+
+<p>By employing these techniques, I was able to quantitatively determine the similarity between the input text and the texts in my database. This similarity computation served as a crucial component of my project, enabling me to retrieve relevant and similar texts, categorize documents, or perform tasks such as clustering or recommendation systems based on text similarity.</p>
+
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
