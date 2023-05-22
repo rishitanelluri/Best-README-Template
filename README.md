@@ -56,12 +56,9 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
-      <a href="#getting-started"> Collect And Preprocess Data.</a>
+      <a href="#collect-and-preprocess-data"> Collect And Preprocess Data.</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Preprocess the text data</a></li>
@@ -94,24 +91,6 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- Collect and preprocess data -->
 ##  Collect And Preprocess Data
 
@@ -140,11 +119,13 @@ To collect and preprocess data, you likely followed several steps and utilized v
 By following these steps, you were able to effectively collect and preprocess data, making it ready for analysis, modeling, or any other downstream tasks in your project. Remember that the specific techniques and tools used can vary depending on the nature of the data and the requirements of your project.
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+<p>In my project, I utilized both BeautifulSoup, a powerful web scraping tool, and ParseHub, a comprehensive web scraping software, to extract and parse relevant data from various websites.</p> 
+
+<p>With BeautifulSoup, I employed its intuitive and flexible Python library to scrape web pages and retrieve specific information. By analyzing the HTML structure of the target websites, I navigated through the elements, extracting text, links, images, and other valuable data. BeautifulSoup's rich set of features enabled me to efficiently handle different types of data extraction tasks.</p>
+
+<p>Additionally, I incorporated ParseHub into my project to tackle more complex web scraping requirements. This versatile software allowed me to create custom scraping projects using a visual interface, making it easy to define extraction rules, handle pagination, and handle dynamic web content. ParseHub's advanced features, such as AJAX handling and JavaScript rendering, ensured that I could capture data from websites with dynamic elements or heavy reliance on JavaScript.</p>
+
+<p>By combining the capabilities of BeautifulSoup and ParseHub, I was able to efficiently scrape and parse data from multiple sources, automating the process and saving significant time and effort. The extracted data served as the foundation for my project, enabling me to perform comprehensive analysis, generate insights, and make informed decisions based on the acquired information.</p>
 
 ### Installation
 
