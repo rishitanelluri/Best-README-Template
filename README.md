@@ -228,13 +228,13 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 
 * [Amazon](https://www.amazon.com/)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Flipkart](https://www.flipkart.com/)
+* [AJIO](https://www.ajio.com/shop/men)
+* [Myntra](https://www.myntra.com/)
+* [Nykaa](https://www.nykaafashion.com/)
+* [Limeroad](https://www.limeroad.com/)
+* [Shoppers Stop](https://www.shoppersstop.com/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
